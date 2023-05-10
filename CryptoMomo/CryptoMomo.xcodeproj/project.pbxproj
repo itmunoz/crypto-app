@@ -17,6 +17,7 @@
 		3EDF0CD02A09AB4B003C092E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF0CCF2A09AB4B003C092E /* Network.swift */; };
 		3EDF0CD42A09B0F2003C092E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF0CD32A09B0F2003C092E /* Coin.swift */; };
 		3EDF0CD62A09C1BC003C092E /* Coinmarketcap-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EDF0CD52A09C1BB003C092E /* Coinmarketcap-Info.plist */; };
+		3EDF0CD92A0B02A0003C092E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF0CD82A0B02A0003C092E /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		3EDF0CCF2A09AB4B003C092E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		3EDF0CD32A09B0F2003C092E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		3EDF0CD52A09C1BB003C092E /* Coinmarketcap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coinmarketcap-Info.plist"; sourceTree = "<group>"; };
+		3EDF0CD82A0B02A0003C092E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		3EDF0CDA2A0B062B003C092E /* CryptoMomo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoMomo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +104,10 @@
 		3EDF0CA22A0980C5003C092E /* CryptoMomo */ = {
 			isa = PBXGroup;
 			children = (
+				3EDF0CDA2A0B062B003C092E /* CryptoMomo.entitlements */,
 				3EDF0CA32A0980C5003C092E /* CryptoMomoApp.swift */,
 				3EDF0CA52A0980C5003C092E /* ContentView.swift */,
+				3EDF0CD82A0B02A0003C092E /* Notification.swift */,
 				3EDF0CD32A09B0F2003C092E /* Coin.swift */,
 				3EDF0CCF2A09AB4B003C092E /* Network.swift */,
 				3EDF0CA72A0980C6003C092E /* Assets.xcassets */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EDF0CD42A09B0F2003C092E /* Coin.swift in Sources */,
+				3EDF0CD92A0B02A0003C092E /* Notification.swift in Sources */,
 				3EDF0CA62A0980C5003C092E /* ContentView.swift in Sources */,
 				3EDF0CD02A09AB4B003C092E /* Network.swift in Sources */,
 				3EDF0CA42A0980C5003C092E /* CryptoMomoApp.swift in Sources */,
@@ -426,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CryptoMomo/CryptoMomo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoMomo/Preview Content\"";
@@ -454,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CryptoMomo/CryptoMomo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoMomo/Preview Content\"";

@@ -15,17 +15,17 @@ struct ContentView: View {
             Text("Top Crypto Coins")
                 .font(.title)
                 .bold()
-
+            
             VStack(alignment: .leading) {
                 ForEach(network.coins) { coin in
                     CoinStack(coin: coin)
                 }
             }
-
         }
         .padding(.vertical)
         .onAppear {
             network.getCoins()
+            network.getBitcoinValue()
         }
     }
 }
@@ -54,4 +54,3 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(Network())
     }
 }
-
